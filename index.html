@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/45375e8f17.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"
+        integrity="sha512-24XP4a9KVoIinPFUbcnjIjAjtS59PUoxQj3GNVpWc86bCqPuy3YxAcxJrxFCxXe4GHtAumCbO2Ze2bddtuxaRw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/light.css">
+    <link rel="icon" href="./assets/YIT.png" type="image/x-icon">
+    <title>YIT SGPA CALCULATOR</title>
+</head>
+
+<body>
+
+    <nav>
+        <div>
+            <div>
+                <img src="./assets/YIT.png">
+            </div>
+            <h1>
+                SGPA CALCULATOR
+            </h1>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+
+            <div class="classicflex">
+                <h4 id="message">Scorecard of this semester</h4>
+            </div>
+
+            <table id="maintable">
+                <tr class="field">
+                    <th>
+                        Subject 
+                    </th>
+                    <th>
+                        Credits
+                    </th>
+                    <th>
+                        Grade
+                    </th>
+                </tr>
+
+                <!-- Subject rows -->
+                <tr class="field">
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        <input type="number" class="credits" min="1" step="1">
+                    </td>
+                    <td>
+                        <input type="number" class="grade" min="0" max="10" step="1">
+                    </td>
+                </tr>
+                <tr class="field">
+                    <td>
+                        2
+                    </td>
+                    <td>
+                        <input type="number" class="credits" min="1" step="1">
+                    </td>
+                    <td>
+                        <input type="number" class="grade" min="0" max="10" step="1">
+                    </td>
+                </tr>
+                <tr class="field">
+                    <td>
+                        3
+                    </td>
+                    <td>
+                        <input type="number" class="credits" min="1" step="1">
+                    </td>
+                    <td>
+                        <input type="number" class="grade" min="0" max="10" step="1">
+                    </td>
+                </tr>
+                <tr class="field">
+                    <td>
+                        4
+                    </td>
+                    <td>
+                        <input type="number" class="credits" min="1" step="1">
+                    </td>
+                    <td>
+                        <input type="number" class="grade" min="0" max="10" step="1">
+                    </td>
+                </tr>
+                <tr class="field">
+                    <td>
+                        5
+                    </td>
+                    <td>
+                        <input type="number" class="credits" min="1" step="1">
+                    </td>
+                    <td>
+                        <input type="number" class="grade" min="0" max="10" step="1">
+                    </td>
+                </tr>
+                <tr class="field">
+                    <td>
+                        6
+                    </td>
+                    <td>
+                        <input type="number" class="credits" min="1" step="1">
+                    </td>
+                    <td>
+                        <input type="number" class="grade" min="0" max="10" step="1">
+                    </td>
+                </tr>
+                <tr class="field">
+                    <td>
+                        7
+                    </td>
+                    <td>
+                        <input type="number" class="credits" min="1" step="1">
+                    </td>
+                    <td>
+                        <input type="number" class="grade" min="0" max="10" step="1">
+                    </td>
+                </tr>
+                <tr class="field">
+                    <td>
+                        8
+                    </td>
+                    <td>
+                        <input type="number" class="credits" min="1" step="1">
+                    </td>
+                    <td>
+                        <input type="number" class="grade" min="0" max="10" step="1">
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Result pane for displaying GPA -->
+            <div id="resultpane">
+                <h4>Your SGPA for the semester is:</h4>
+                <h3 id="finaljudgement">
+                    0.00
+                </h3>
+            </div>
+
+            <!-- Calculate button -->
+            <div class="calculate-button">
+                <button id="calculateBtn">Calculate SGPA</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="flex">
+            <a href="https://www.linkedin.com/in/riya-sonal-nazareth-20b26a227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <div class="footer-kids fa fa-linkedin"></div>
+            </a>
+    </footer>
+
+    <script src="./app/index.js"></script>
+    <script>
+        feather.replace()
+    </script>
+</body>
+
+</html>
