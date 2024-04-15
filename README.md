@@ -18,6 +18,10 @@ Welcome to the SGPA Calculator! This dynamic and user-friendly web application h
 3. Voila! Your SGPA for the semester is displayed.
 4. Feeling relieved? We hope to see you back next semester!
 
+## Demo 🚀
+
+Check out the live demo of the SGPA Calculator [here](https://riya-sonal.github.io/SGPA-CALCULATOR/).
+
 ## Getting Started 🚀
 
 To get started with the SGPA Calculator on your local machine:
